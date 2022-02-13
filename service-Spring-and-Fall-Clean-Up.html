@@ -914,24 +914,29 @@
                       
                     </div>
                     <!-- Bottom CTAs -->
-                    <div class="p-1 bg-gray-50">
-                        <a
-                            href="#"
-                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
+                    <div class="d-none p-1 bg-primary sm:bg-gray-50">
+                        
+                            <button
+                            @click="contactModalOpen = true"
+                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
                             >
-                            Get a quote
-                            <!-- text -->
-                            <!-- are these 2 correct? -->
-                            </a
-                        >
-                        <a
-                            href="#"
-                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
-                            >
-                            Book Now
-                            <!-- none -->
-                            </a
-                        >
+                                Book Now
+                            </button>
+                        
+                        
+                            <a
+                                target = "_blank" 
+                                href="tel:(608) 393-8568"
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                >
+                                (608) 393-8568
+                            </a>
+                         
+                     
+                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1298,19 +1303,16 @@
                                         </div>
                                         <blockquote class="mt-10">
                                             <div class="max-w-3xl mx-auto text-base font-medium leading-9 text-center sm:text-2xl">
-                                                <p>Gutter clean-out, microwave install, trailer rental for room clean up... 
-Cordell has done quality work on all these things for us at very reasonable cost.
-Five stars for quality of work, timeliness, and communication! 
-Call Cordell!</p>
+                                                <p>Cordell installed lights on our 75 foot pine tree for the Christmas season and was very professional, kind and courteous. He was careful to care for the property as well as he was reasonably priced. Excellent work, great guy. Fully recommend!</p>
                                             </div>
                                             <footer class="mt-8">
                                                 <div class="flex flex-col items-center justify-center md:flex-row">
-                                                    <div class="text-base font-medium text-gray-900">Laura Hamdan-Krause </div>
+                                                    <div class="text-base font-medium text-gray-900">Liz S. </div>
                                                     <svg class="hidden w-5 h-5 mx-1 text-primary md:block" fill="currentColor" viewBox="0 0 20 20">
                                                         <path d="M11 0h3L9 20H6l5-20z" />
                                                     </svg>
                                                     <div class="flex items-center">
-                                                        <div class="text-base font-medium text-gray-500">Gutter Cleaning</div>
+                                                        <div class="text-base font-medium text-gray-500">Holiday Light Hanging</div>
                                                         <svg class="w-5 h-5 mx-1 text-primary" fill="currentColor" viewBox="0 0 20 20">
                                                             <path d="M11 0h3L9 20H6l5-20z" />
                                                         </svg>
@@ -1385,16 +1387,16 @@ Call Cordell!</p>
                                         </div>
                                         <blockquote class="mt-10">
                                             <div class="max-w-3xl mx-auto text-base font-medium leading-9 text-center sm:text-2xl">
-                                                <p>Cordell installed lights on our 75 foot pine tree for the Christmas season and was very professional, kind and courteous. He was careful to care for the property as well as he was reasonably priced. Excellent work, great guy. Fully recommend!</p>
+                                                <p>Cordell fixed an issue we were having with a can light above our kitchen sink. He was so friendly and talked my husband through the process while he was working so that we have an idea of what to do if it happens again. He was very responsive to messages..we definitely know who to call when we have issues again in the future!</p>
                                             </div>
                                             <footer class="mt-8">
                                                 <div class="flex flex-col items-center justify-center md:flex-row">
-                                                    <div class="text-base font-medium text-gray-900">Liz S. </div>
+                                                    <div class="text-base font-medium text-gray-900">Katelyn Freyer </div>
                                                     <svg class="hidden w-5 h-5 mx-1 text-primary md:block" fill="currentColor" viewBox="0 0 20 20">
                                                         <path d="M11 0h3L9 20H6l5-20z" />
                                                     </svg>
                                                     <div class="flex items-center">
-                                                        <div class="text-base font-medium text-gray-500">Holiday Light Hanging</div>
+                                                        <div class="text-base font-medium text-gray-500">Handyman Service</div>
                                                         <svg class="w-5 h-5 mx-1 text-primary" fill="currentColor" viewBox="0 0 20 20">
                                                             <path d="M11 0h3L9 20H6l5-20z" />
                                                         </svg>
@@ -1637,16 +1639,19 @@ Call Cordell!</p>
                                         </div>
                                         <blockquote class="mt-10">
                                             <div class="max-w-3xl mx-auto text-base font-medium leading-9 text-center sm:text-2xl">
-                                                <p>Cordell fixed an issue we were having with a can light above our kitchen sink. He was so friendly and talked my husband through the process while he was working so that we have an idea of what to do if it happens again. He was very responsive to messages..we definitely know who to call when we have issues again in the future!</p>
+                                                <p>Gutter clean-out, microwave install, trailer rental for room clean up... 
+Cordell has done quality work on all these things for us at very reasonable cost.
+Five stars for quality of work, timeliness, and communication! 
+Call Cordell!</p>
                                             </div>
                                             <footer class="mt-8">
                                                 <div class="flex flex-col items-center justify-center md:flex-row">
-                                                    <div class="text-base font-medium text-gray-900">Katelyn Freyer </div>
+                                                    <div class="text-base font-medium text-gray-900">Laura Hamdan-Krause </div>
                                                     <svg class="hidden w-5 h-5 mx-1 text-primary md:block" fill="currentColor" viewBox="0 0 20 20">
                                                         <path d="M11 0h3L9 20H6l5-20z" />
                                                     </svg>
                                                     <div class="flex items-center">
-                                                        <div class="text-base font-medium text-gray-500">Handyman Service</div>
+                                                        <div class="text-base font-medium text-gray-500">Gutter Cleaning</div>
                                                         <svg class="w-5 h-5 mx-1 text-primary" fill="currentColor" viewBox="0 0 20 20">
                                                             <path d="M11 0h3L9 20H6l5-20z" />
                                                         </svg>
@@ -1760,9 +1765,12 @@ Call Cordell!</p>
                         // let radius = Array.from(document.getElementsByClassName("radius")).map(i => {
                         // return Number(i.innerHTML.trim())
                         // })
-                        let radius = 50
+                        // let radius = 50
+                        let radius = document.querySelector('#radius').innerText
                         let city = document.querySelector('#city').innerText
                         let state = document.querySelector('#state').innerText
+                        console.log('radius - city ' , city)
+                        console.log('radius - radius ' , state)
                         let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}+${state}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
                         // let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${cities[0].replace(" ", "+")}+${state[0]}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
                 
@@ -1802,13 +1810,13 @@ Call Cordell!</p>
               
                 <span class="sr-only" id="city">Reedsburg</span>
                 <span class="sr-only" id="state">WI</span>
+                <span class="sr-only" id="radius">3</span>
                   
                 </div>
             </div>
         </div>
     </div>
 </section>
-
                         
                     
                         
@@ -1876,7 +1884,11 @@ Call Cordell!</p>
                 <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/46a100aa-b58d-4596-bffb-3c413b96aa43.png" alt="" />
                 
                 <p class="text-base text-gray-500">
-                    The Best Landscaping and Junk Removal service in Reedsburg and surrounding areas. We provide professional service and offer free quotes. Reach out today to learn how we can help.
+                    Royale Lawn Care and Maintenance LLC<br/>
+                     
+                        Reedsburg, WI <br/>
+                    
+                    (608) 393-8568
                     <!-- Is this supposed to be here and correct?  -->
                     <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
                 </p>
@@ -2070,7 +2082,7 @@ Call Cordell!</p>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <!-- Locations Links -->
                     <div>
-                        <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">Locations</h3>
+                        <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">Service Areas</h3>
                         <ul role="list" class="mt-4 -mx-1 space-y-4">
                             
                             <li>
@@ -2124,7 +2136,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Monday: 8:00am - 6:00pm</a
+                                    >Sun: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2132,7 +2144,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Tuesday: 8:00am - 6:00pm</a
+                                    >Mon: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2140,7 +2152,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Wednesday: 8:00am - 6:00pm</a
+                                    >Tues: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2148,7 +2160,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Thursday: 8:00am - 6:00pm</a
+                                    >Wed: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2156,7 +2168,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Friday: 8:00am - 6:00pm</a
+                                    >Thu: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2164,7 +2176,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Saturday: 8:00am - 6:00pm</a
+                                    >Fri: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2172,7 +2184,7 @@ Call Cordell!</p>
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sunday: 8:00am - 6:00pm</a
+                                    >Sat: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -2363,92 +2375,92 @@ Call Cordell!</p>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114671"
-                                            name="114671"
+                                            id="contact-service-117166"
+                                            name="117166"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114671" class="ml-3 text-sm font-medium text-gray-700">Lawn Care</label>
+                                        <label for="contact-label-service-117166" class="ml-3 text-sm font-medium text-gray-700">Lawn Care</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114672"
-                                            name="114672"
+                                            id="contact-service-117167"
+                                            name="117167"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114672" class="ml-3 text-sm font-medium text-gray-700">Snow Removal</label>
+                                        <label for="contact-label-service-117167" class="ml-3 text-sm font-medium text-gray-700">Snow Removal</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114673"
-                                            name="114673"
+                                            id="contact-service-117168"
+                                            name="117168"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114673" class="ml-3 text-sm font-medium text-gray-700">Junk Hauling</label>
+                                        <label for="contact-label-service-117168" class="ml-3 text-sm font-medium text-gray-700">Junk Hauling</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114674"
-                                            name="114674"
+                                            id="contact-service-117169"
+                                            name="117169"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114674" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
+                                        <label for="contact-label-service-117169" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114675"
-                                            name="114675"
+                                            id="contact-service-117170"
+                                            name="117170"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114675" class="ml-3 text-sm font-medium text-gray-700">Moving Service</label>
+                                        <label for="contact-label-service-117170" class="ml-3 text-sm font-medium text-gray-700">Moving Service</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114676"
-                                            name="114676"
+                                            id="contact-service-117171"
+                                            name="117171"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114676" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
+                                        <label for="contact-label-service-117171" class="ml-3 text-sm font-medium text-gray-700">Spring and Fall Clean Up</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114677"
-                                            name="114677"
+                                            id="contact-service-117172"
+                                            name="117172"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114677" class="ml-3 text-sm font-medium text-gray-700">Holiday Light Hanging</label>
+                                        <label for="contact-label-service-117172" class="ml-3 text-sm font-medium text-gray-700">Holiday Light Hanging</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114678"
-                                            name="114678"
+                                            id="contact-service-117173"
+                                            name="117173"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114678" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
+                                        <label for="contact-label-service-117173" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-114679"
-                                            name="114679"
+                                            id="contact-service-117174"
+                                            name="117174"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-114679" class="ml-3 text-sm font-medium text-gray-700">Handyman Service</label>
+                                        <label for="contact-label-service-117174" class="ml-3 text-sm font-medium text-gray-700">Handyman Service</label>
                                     </div>
                                 
                             </div>
